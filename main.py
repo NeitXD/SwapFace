@@ -1,6 +1,10 @@
 # NeitXD
 # main.py
+from dotenv import load_dotenv
 import os
+
+load_dotenv()  # Add this to load .env variables
+
 import logging
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
